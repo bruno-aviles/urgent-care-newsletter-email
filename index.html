@@ -6,6 +6,67 @@
     <title>Next Level Newsletter Email</title>
     <style>
         *{box-sizing: border-box;}
+        /* Desktop */
+        @media screen and (min-width: 960px) {
+            .container{
+                width: 960px;
+            }
+        }
+        /* Midsizes */
+        @media screen and (max-width: 960px) {
+            .container{
+                width: 600px;
+            }
+        }
+        /* Mobile */
+        @media screen and (max-width: 600px) {
+            .container{
+                width: 100%;
+            }
+            .container__header-link, .container__header-link--vline{
+                font-size: 17px !important;
+            }
+            .container__blog-post-heading{
+                font-size: 22px !important;
+                margin: 20px 20px 0 !important;
+                line-height: 1.5 !important;
+            }
+            .container__blog-post-wrapper{
+                padding: 20px 20px 46px 20px !important; 
+            }
+            .container__blog-post-info{
+                line-height: 1.5 !important;
+                margin: 20px 0px 40px !important;
+            }
+            .container__mobile-app-info{
+                margin: 32px 0 40px 0 !important;
+            }
+
+            .container__mobile-app--col-1{
+                min-width: 100%;
+            }
+            .container__mobile-app-info{
+                margin-top: 20px !important;
+            }
+            .container__mobile-app--col-2{
+                min-width: 100%;
+            }
+            .mobile-app__image{
+                width: 280px;
+            }
+            .container__footer td{
+                padding: 20px !important;
+            }
+            .container__footer-heading{
+                margin: 0 0 16px !important;
+            }
+            .container__footer-info{
+                margin: 0 !important;
+            }
+            td .social-media__link{
+                padding: 20px 5px 0 !important;
+            }       
+        }
     </style>
 </head>
 <body style="margin: 0;">
@@ -23,9 +84,9 @@
                                 <tr>
                                     <td align="center">
                                         <a class="container__header-link" href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 26px; color: #006680; text-transform: uppercase; text-decoration: none; letter-spacing: 2px;">Blog</a>
-                                        <span style="font-family: Arial, Helvetica, sans-serif; font-size: 26px; color: #006680; text-transform: uppercase; text-decoration: none; margin: 0 22px;">|</span>
+                                        <span class="container__header-link--vline" style="font-family: Arial, Helvetica, sans-serif; font-size: 26px; color: #006680; text-transform: uppercase; text-decoration: none; margin: 0 22px;">|</span>
                                         <a class="container__header-link" href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 26px; color: #006680; text-transform: uppercase; text-decoration: none; letter-spacing: 2px;">Insights</a>
-                                        <span style="font-family: Arial, Helvetica, sans-serif; font-size: 26px; color: #006680; text-transform: uppercase; text-decoration: none; margin: 0 22px;">|</span>
+                                        <span class="container__header-link--vline" style="font-family: Arial, Helvetica, sans-serif; font-size: 26px; color: #006680; text-transform: uppercase; text-decoration: none; margin: 0 22px;">|</span>
                                         <a class="container__header-link" href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 26px; color: #006680; text-transform: uppercase; text-decoration: none; letter-spacing: 2px;">Get Seen</a>
                                     </td>
                                 </tr>
@@ -39,7 +100,7 @@
                             <h1 class="container__blog-post-heading" style="font-family: Arial, Helvetica, sans-serif; font-size: 26px; font-weight: lighter; text-align: center; margin: 32px 32px 0 32px;">Hi Bruno, read on to know what's new in the Next Level blog.</h1>
                             <table class="container__blog-post" width="100%" align="center" cellspacing="0" cellpadding="0" style="border-bottom: dotted 1.6px #c7c7c7;">
                                 <tr>
-                                    <td align="center" style="padding: 28px 28px 46px 28px;" >
+                                    <td class="container__blog-post-wrapper" align="center" style="padding: 28px 28px 46px 28px;" >
                                         <img class="container__blog-post-image" src="./images/navigating stress.gif" alt="Navigate stress in the workplace image"  style="max-width: 100%;">
                                         <p class="container__blog-post-info" style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: 2; color: #42443f; text-align: center; margin: 28px; ">Stress in the workplace is extremely common. However, there are healthy ways to navigate these prolonged stressors. Read on to explore our tips!</p>
                                         <a class="container__blog-post-link" href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; text-transform: uppercase; text-decoration: none; padding: 18px 22px; margin: 0 0 28px 0; background-color: #006680; color: #ffffff; border-radius: 6px;">read the post</a>
@@ -54,7 +115,7 @@
                         <td>
                             <table class="container__blog-post" width="100%" align="center" cellspacing="0" cellpadding="0">
                                 <tr>
-                                    <td align="center" style="padding: 28px 28px 46px 28px;" >
+                                    <td class="container__blog-post-wrapper" align="center" style="padding: 28px 28px 46px 28px;" >
                                         <img class="container__blog-post-image" src="./images/chronic stress.gif" alt="How chronic stress can impact your health image"  style="max-width: 100%;">
                                         <p class="container__blog-post-info" style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: 2; color: #42443f; text-align: center; margin: 28px; ">Studies have shown that continuous exposure to stress or strain can impact your overall health. Click below to learn how stress affects your body and tips to cope!</p>
                                         <a class="container__blog-post-link" href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; text-transform: uppercase; text-decoration: none; padding: 18px 22px; margin: 0 0 28px 0; background-color: #006680; color: #ffffff; border-radius: 6px;">read the post</a>
@@ -67,14 +128,28 @@
                     <!-- start of row 4 -->
                     <tr>
                         <td>
-                            <table class="container__mobile-app" align="center" width="100%" cellspacing="0" cellpadding="0" style="background-color: #006680; padding: 0 26px;">
+                            <table class="container__mobile-app" align="center" width="100%" cellspacing="0" cellpadding="0" style="background-color: #006680; border-collapse: collapse;">
                                 <tr>
-                                    <td width="50%" style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: #ffffff; text-align: center; padding: 0 0 52px 0;">
-                                        <p class="container__mobile-app-info" style="line-height: 1.5; margin: 32px 0 52px 0;">Fast and easy scheduling at your fingertips is possible through the Next Level mobile app! Click the button below to download for free on the App Store or Google Play.</p>
-                                        <a class="container__mobile-app-link" href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; text-transform: uppercase; text-decoration: none; padding: 18px 22px; margin: 0 0 28px 0; background-color: #ffffff; color: #006680; border-radius: 6px;">get the mobile app</a>
-                                    </td>
-                                    <td width="50%">
-                                        <img src="./images/phone.png" alt="" valign="bottom" style="max-width: 100%;">
+                                    <td>
+                                        <!-- start COL-1 -->
+                                        <table class="container__mobile-app--col-1" cellspacing="0" cellpadding="0" align="left" width="50%">
+                                            <tr>
+                                                <td align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: #ffffff; text-align: center; padding: 0 20px 34px 20px;">
+                                                    <p class="container__mobile-app-info" style="line-height: 1.5; margin-bottom: 24px;">Fast and easy scheduling at your fingertips is possible through the Next Level mobile app! Click the button below to download for free on the App Store or Google Play.</p>
+                                                    <a class="container__mobile-app-link" href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; text-transform: uppercase; text-decoration: none; padding: 16px 22px; margin: 0 0 28px 0; background-color: #ffffff; color: #006680; border-radius: 6px;">get the mobile app</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- end COL-1 -->
+                                        <!-- start COL-2 -->
+                                        <table class="container__mobile-app--col-2" cellspacing="0" cellpadding="0" align="right" width="50%">
+                                            <tr>
+                                                <td align="center">
+                                                    <img src="./images/phone.png" alt="Phone Image" class="mobile-app__image" style="max-width: 100%; vertical-align: bottom; ">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- end COL-2 -->
                                     </td>
                                 </tr>
                             </table>
